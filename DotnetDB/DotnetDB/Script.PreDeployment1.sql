@@ -5,6 +5,7 @@ IF (DB_ID(N'MonsterDB') is not null)
 BEGIN
 	DROP DATABASE MonsterDB;
 END;
+GO
 
 CREATE DATABASE MonsterDB;
 GO
@@ -17,3 +18,5 @@ BEGIN
 	DROP SCHEMA Monster;
 END;
 GO
+
+
