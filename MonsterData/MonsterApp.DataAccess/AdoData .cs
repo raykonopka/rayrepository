@@ -5,15 +5,16 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace MonsterApp.DataAccess
 {
-    public class AdoData
+    public partial class AdoData
     {
-        private string connectionString = ConfigurationManager.ConnectionStrings["MonsterDB"].ConnectionString;
+        private string connectionString = ConfigurationManager.ConnectionStrings["MonsterDBConnectionString"].ConnectionString;
 
 
         #region Methods
@@ -23,12 +24,12 @@ namespace MonsterApp.DataAccess
         ///<returns></returns>
         public List<Gender> GetGenders()
         {
-            var genders = new List<Gender>();
-
+        
             try
             {
                 var ds = GetDataDisconnected("SELECT * FROM Monster.Gender;");
-                
+                var genders = new List<Gender>();
+
                 foreach (DataRow row in ds.Tables[0].Rows)
                 {
                     genders.Add(new Gender()
@@ -38,15 +39,15 @@ namespace MonsterApp.DataAccess
                         Active = bool.Parse(row[2].ToString())
                     });
                 }
+
+                return genders;
             }
 
-            catch (Exception)
+            catch (Exception ex)
             {
+                Debug.WriteLine(ex);
                 return null;
             }
-
-            
-            return genders;
         }
 
 
@@ -79,7 +80,7 @@ namespace MonsterApp.DataAccess
 
             using (var connection = new SqlConnection(connectionString))
             {
-                cmd = new SqlCommand(qu connection);
+                cmd = new SqlCommand(query, connection);
                 da = new SqlDataAdapter(cmd);
                 ds = new DataSet();
 

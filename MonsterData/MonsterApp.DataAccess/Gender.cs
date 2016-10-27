@@ -10,10 +10,6 @@ namespace MonsterApp.DataAccess
     {
         public int GenderId { get; set; }
         public string Name { get; set; }
-        public bool Active { get; internal set; }
-
-        ///<summary>
-        ///
-        ///</summary>
+        public bool Active { get; set; }
     }
 }
