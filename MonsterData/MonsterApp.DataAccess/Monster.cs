@@ -12,19 +12,18 @@ namespace MonsterApp.DataAccess
     using System;
     using System.Collections.Generic;
     
-    public partial class Gender
+    public partial class Monster
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Gender()
-        {
-            this.Monsters = new HashSet<Monster>();
-        }
-    
-        public int GenderId { get; set; }
-        public string GenderName { get; set; }
+        public int MonsterId { get; set; }
+        public Nullable<int> GenderId { get; set; }
+        public Nullable<int> TitleId { get; set; }
+        public int TypeId { get; set; }
+        public string Name { get; set; }
+        public string Picture { get; set; }
         public bool Active { get; set; }
     
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Monster> Monsters { get; set; }
+        public virtual Gender Gender { get; set; }
+        public virtual Title Title { get; set; }
+        public virtual MonsterType MonsterType { get; set; }
     }
 }
