@@ -1,3 +1,4 @@
+# 1610-oct17-dotnet -- gitignore
 
 # Created by https://www.gitignore.io/api/visualstudio
 
@@ -277,4 +278,5 @@ __pycache__/
 
 ### VisualStudio Patch ###
 build/
-/MonsterData/MonsterApp.DataAccess/App.config
+/MonsterApp/MonsterApp.DataAccess/App.config
+/MonsterApp/MonsterApp.Tests/App.config
