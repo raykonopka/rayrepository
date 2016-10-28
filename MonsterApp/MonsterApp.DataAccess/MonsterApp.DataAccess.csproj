@@ -89,11 +89,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
     <EntityDeploy Include="MonsterModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>MonsterModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <None Include="App.config" />
     <None Include="MonsterModel.edmx.diagram">
       <DependentUpon>MonsterModel.edmx</DependentUpon>
     </None>
