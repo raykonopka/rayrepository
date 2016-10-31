@@ -1,1 +1,1 @@
-# you can do anything on this code.
+# 1610-oct17-dotnet -- contributing
