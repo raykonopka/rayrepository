@@ -1,9 +1,1 @@
-# 0.1.0
-
-## added
-+ new project
-
-## fixed
-
-## removed
-
+# 1610-oct17-dotnet -- changelog
