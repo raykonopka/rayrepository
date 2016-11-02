@@ -1,4 +1,4 @@
-﻿using MonsterWeb.Logic.MonsterServiceReference;
+﻿using MonsterWeb.Logic.ServiceReference1;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,16 +7,13 @@ using System.Threading.Tasks;
 
 namespace MonsterWeb.Logic
 {
-    public class DataService
+  public class DataService
+  {
+    private Service1Client msc = new Service1Client();
+
+    public List<GenderDAO> GetGenders()
     {
-        private Service1Client msc = new Service1Client();
-
-        
-        public List<GenderDAO> GetGenders()
-        {
-            return msc.GetGenders().ToList();
-        }
-        
-
+      return msc.GetGenders().ToList();
     }
+  }
 }

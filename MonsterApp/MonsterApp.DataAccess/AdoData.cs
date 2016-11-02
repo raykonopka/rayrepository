@@ -16,7 +16,7 @@ namespace MonsterApp.DataAccess
   /// </summary>
   public partial class AdoData
   {
-    private string connectionString = ConfigurationManager.ConnectionStrings["MonsterDBEntities"].ConnectionString;
+        private string connectionString = ConfigurationManager.ConnectionStrings["MonsterDBEntities"].ConnectionString;
 
     #region Methods
 

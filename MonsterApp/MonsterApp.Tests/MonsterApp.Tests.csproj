@@ -70,7 +70,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdoDataInsertTests.cs" />
-    <Compile Include="AdoDataMsTests.cs" />
+    <Compile Include="AdoDataMSTests.cs" />
     <Compile Include="AdoDataTests.cs" />
     <Compile Include="EfDataTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

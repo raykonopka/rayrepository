@@ -8,15 +8,15 @@ using Xunit;
 
 namespace MonsterWeb.Tests
 {
-    public class ServiceTests
+  public class ServiceTests
+  {
+    [Fact]
+    public void Test_GetGenders()
     {
-        [Fact]
-        public void Test_GetGenders()
-        {
-            var service = new DataService();
-            var actual = service.GetGenders();
+      var service = new DataService();
+      var actual = service.GetGenders();
 
-            Assert.NotNull(actual);
-        }
+      Assert.NotNull(actual);
     }
+  }
 }

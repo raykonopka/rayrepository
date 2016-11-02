@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonsterWeb.Client", "MonsterWeb.Client\MonsterWeb.Client.csproj", "{0B855308-EDDE-4B52-B613-4E8F7C61181F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonsterWeb.Client", "MonsterWeb.Client\MonsterWeb.Client.csproj", "{8A5339A8-51DA-4A66-96F8-6507A6960285}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonsterWeb.Logic", "MonsterWeb.Logic\MonsterWeb.Logic.csproj", "{EDE12EEE-B986-4689-BA82-E9280853F2DE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonsterWeb.Logic", "MonsterWeb.Logic\MonsterWeb.Logic.csproj", "{93250890-ED9D-49DC-999F-5DAA23BA1463}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonsterWeb.Tests", "MonsterWeb.Tests\MonsterWeb.Tests.csproj", "{05EAD6F0-9872-453C-A660-3162E7786C98}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonsterWeb.Tests", "MonsterWeb.Tests\MonsterWeb.Tests.csproj", "{EB2A3E0D-61CE-4836-A56F-11ECC351C6EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,18 +15,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0B855308-EDDE-4B52-B613-4E8F7C61181F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0B855308-EDDE-4B52-B613-4E8F7C61181F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0B855308-EDDE-4B52-B613-4E8F7C61181F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0B855308-EDDE-4B52-B613-4E8F7C61181F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EDE12EEE-B986-4689-BA82-E9280853F2DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EDE12EEE-B986-4689-BA82-E9280853F2DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EDE12EEE-B986-4689-BA82-E9280853F2DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EDE12EEE-B986-4689-BA82-E9280853F2DE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{05EAD6F0-9872-453C-A660-3162E7786C98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{05EAD6F0-9872-453C-A660-3162E7786C98}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{05EAD6F0-9872-453C-A660-3162E7786C98}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{05EAD6F0-9872-453C-A660-3162E7786C98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A5339A8-51DA-4A66-96F8-6507A6960285}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A5339A8-51DA-4A66-96F8-6507A6960285}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A5339A8-51DA-4A66-96F8-6507A6960285}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A5339A8-51DA-4A66-96F8-6507A6960285}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93250890-ED9D-49DC-999F-5DAA23BA1463}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93250890-ED9D-49DC-999F-5DAA23BA1463}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93250890-ED9D-49DC-999F-5DAA23BA1463}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93250890-ED9D-49DC-999F-5DAA23BA1463}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB2A3E0D-61CE-4836-A56F-11ECC351C6EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB2A3E0D-61CE-4836-A56F-11ECC351C6EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB2A3E0D-61CE-4836-A56F-11ECC351C6EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB2A3E0D-61CE-4836-A56F-11ECC351C6EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

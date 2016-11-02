@@ -8,30 +8,30 @@ using System.Threading.Tasks;
 
 namespace MonsterApp.Tests
 {
-    [TestClass]
-    public class AdoDataMsTests
+  [TestClass]
+  public class AdoDataMSTests
+  {
+    private DataAccess.Models.Gender gender;
+
+    [TestInitialize]
+    public void Initialize()
     {
-        private DataAccess.Models.Gender gender;
-
-        [TestInitialize]
-        public void Initialize()
-        {
-            gender = new DataAccess.Models.Gender() { Name = "TestGenderMS" };
-        }
-
-        [TestCleanup]
-        public void Cleanup()
-        {
-            GC.Collect();
-        }
-
-        [TestMethod]
-        public void Test_InsertGender()
-        {
-            var data = new AdoData();
-            var actual = data.InsertGender(gender);
-
-            Assert.IsTrue(actual);
-        }
+      gender = new DataAccess.Models.Gender() { Name = "TestGender" };
     }
+
+    [TestCleanup]
+    public void Cleanup()
+    {
+      GC.Collect();
+    }
+
+    [TestMethod]
+    public void Test_InsertGender()
+    {
+      var data = new AdoData();
+      var actual = data.InsertGender(gender);
+
+      Assert.IsTrue(actual);
+    }
+  }
 }
